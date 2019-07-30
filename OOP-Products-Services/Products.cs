@@ -1,19 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace OOP_Products_Services {
-    class Program {
-        static void Main(string[] args) {
+    public class Products : Base {
 
-            Products P1 = new Products();
-            P1.Name = "Basic Widget";
-            P1.Price = 10;
+        public decimal Price { get; set; }
+        public int Units { get; set; }
 
 
-           
-           
+    }
+
+    public decimal CalcTotalSales (int) {
 
 
-        }
     }
 }
 
