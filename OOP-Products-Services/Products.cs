@@ -17,6 +17,26 @@ namespace OOP_Products_Services {
 
 }
 
+namespace OopProductsServicesProject {
+
+    public class Product : SalesItem {
+
+        public decimal Price { get; set; }//public so you can SET and GET them outside of the Class
+        public int Units { get; set; }
+
+        public override decimal CalcSales() {//Overide the CalcSales from parent
+            return Price * Units;
+        }
+
+        public Product(int Id, string Name, decimal Price, int Units)//constructor for Product, uses the Parent Constructor
+            
+            : base(Id, Name) {//the 'base' calls the parent constructor
+            this.Price = Price;//the Price and Units are added to the body of the constructor
+            this.Units = Units;
+        }
+    }
+}
+
 /*
 Id int (optional)
 Name string
