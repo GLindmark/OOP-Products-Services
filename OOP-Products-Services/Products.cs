@@ -11,10 +11,6 @@ namespace OOP_Products_Services {
 
     }
 
-    public decimal CalcTotalSales (int) {
-
-
-    }
 }
 
 /*
@@ -41,3 +37,4 @@ The company has three services:
 3. 24x7 Support     - Rate: $100/hr; Hours 750
 ​
 The output needs only show the grand total of all sales
+*/
