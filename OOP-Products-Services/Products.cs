@@ -8,6 +8,10 @@ namespace OOP_Products_Services {
         public decimal Price { get; set; }
         public int Units { get; set; }
 
+        public int TotalProductSales() {
+            return Price * Units
+        }
+
 
     }
 

@@ -8,5 +8,9 @@ namespace OOP_Products_Services {
         public int Rate { get; set; }
         public int Hours { get; set; }
 
+        public int TotalServiceSales() {
+            return Rate * Hours
+        }
+
     }
 }
