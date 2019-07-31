@@ -1,7 +1,7 @@
 ﻿using System;
-
+/*
 namespace OOP_Products_Services {
-    class Program {
+   class Program {
         static void Main(string[] args) {
 
             Products P1 = new Products();
@@ -40,7 +40,7 @@ namespace OOP_Products_Services {
               
             }
 
-
+    */
             namespace OopProductsServicesProject {
         class Program {
             static void Main(string[] args) {
@@ -53,8 +53,16 @@ namespace OOP_Products_Services {
                 var sPS = new Service(12, "Priority Support", 50, 550);
                 var s247 = new Service(13, "24x7 Support", 100, 750);
 
+
+
+
                 var sales = new SalesItem[] {//array
-                pBW, pAW, pSW, sBS, sPS, s247
+                pBW, pAW, pSW, sBS, sPS, s247,//can add the membership instance directly to the array
+                new Membership(21,"Basic Membership", 100, 500),//this becomes the 7th instance in the array, 
+                //no need to create variables since they are not used,
+                new Membership(21,"Advanced Membership", 200, 1500),
+                new Membership(21,"Premimum Membership", 400, 300)
+
             };
 
                 var total = 0M;
